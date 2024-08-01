@@ -1,23 +1,4 @@
-:root {
-  --main-color: #c271ff;
-  --opacity-value: 0.9;
-  --background-color: #071629;
-  --font-family-1: "Source Sans Pro", sans-serif;
-  --font-family-2: "Spin Cycle OT", sans-serif;
-  --font-family-3: Coiny, sans-serif;
-  --color-white: #ffffff;
-  --nav-line-height: 2px;
-  --pros-padding: 62px;
-  --quotes-arrows-pad: 300px;
-  --popular-arrows-x: -6vw;
-  --smile-p-margin: 20px;
-  --check-color: #82d24f;
 
-  --faq-pad-inner: 8vw;
-  --faq-pad-outer: 7vw;
-}
-
-/* General Styles  */
 
 .body {
   font-family: var(--font-family-1);
@@ -282,8 +263,6 @@
   }
 }
 
-/* POPULAR SECTION  */
-
 .popular {
   height: auto;
   background-color: var(--color-white);
@@ -305,7 +284,6 @@
 }
 
 .section .card-img-overlay {
-  /* top: 25px; */
   top: 5%;
 }
 .section .card-title {
@@ -346,7 +324,6 @@
     --popular-arrows-x: -3vw;
   }
   .section .card-img-overlay {
-    /* top: 25px; */
     top: 4%;
   }
   .section .card-img-overlay img {
@@ -366,7 +343,6 @@
     width: 30%;
   }
   .section .card-img-overlay {
-    /* top: 25px; */
     top: 5%;
   }
 }
@@ -388,12 +364,10 @@
     width: 30%;
   }
   .section .card-img-overlay {
-    /* top: 25px; */
     top: 5%;
   }
 }
 
-/* SMILES Section  */
 
 .smiles {
   height: auto;
@@ -528,16 +502,6 @@
     padding: 45px 0;
   }
 }
-
-/* ==============================================================
-==============================================================
-============================================================== */
-/* PRICING  */
-/* ==============================================================
-==============================================================
-============================================================== */
-
-/* HEADER SECTION */
 
 .pricing-header {
   background-image: url(images/pic_2.jpg);
@@ -899,4 +863,41 @@
   .results .card {
     width: 90vw;
   }
+}
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #C271FF;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+:root {
+
+  --background-color: #071629;
+
+  --font-family-3: Coiny, sans-serif;
+  --color-white: #ffffff;
+  --nav-line-height: 2px;
+  --pros-padding: 62px;
+
+  --smile-p-margin: 20px;
+  --check-color: #82d24f;
+  --main-color: #c271ff;
+  --opacity-value: 0.9;
+
+  --quotes-arrows-pad: 300px;
+  --popular-arrows-x: -6vw;
+  --faq-pad-inner: 8vw;
+  --faq-pad-outer: 7vw;
+  --font-family-1: "Source Sans Pro", sans-serif;
+  --font-family-2: "Spin Cycle OT", sans-serif;
 }
